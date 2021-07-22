@@ -9,7 +9,7 @@ public class GoalKeeperMover : MonoBehaviour
     public GameObject ballPointer; //
     public GameObject isPassedPointer;
     [SerializeField]float speed;
-
+    public AudioSource goalkeeperhold;
 
     
 
@@ -18,9 +18,19 @@ public class GoalKeeperMover : MonoBehaviour
 
     [SerializeField]isPassed isPassed;
 
+    private void OnCollisionEnter(Collision collision)
+    {
+        if(collision.gameObject.tag == "Ball")
+        {
+        goalkeeperhold.Play();
+        }
+    }
+    
+        
+       
+    
 
-    
-    
+
 
     private void Awake()
     {
