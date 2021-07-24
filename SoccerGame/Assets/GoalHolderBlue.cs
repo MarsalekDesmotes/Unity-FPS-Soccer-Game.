@@ -2,18 +2,19 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class GoalHolder : MonoBehaviour
+public class GoalHolderBlue : MonoBehaviour
 {
     public AudioSource crowd_audio;
-    public static int golsayaci;
+   
+    public static int mavitakimgol;
     private void OnTriggerEnter(Collider other)
     {
-        if(other.tag == "Ball")
+        if (other.tag == "Ball")
         {
-            golsayaci++;
-        crowd_audio.Play();
+            mavitakimgol++;
+            crowd_audio.Play();
         }
-        
+
 
     }
 }

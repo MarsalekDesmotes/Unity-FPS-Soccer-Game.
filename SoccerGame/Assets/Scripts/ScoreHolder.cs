@@ -13,7 +13,8 @@ public class ScoreHolder : MonoBehaviour
     private void Awake()
     {
         scoretext = GetComponent<Text>();
-        GoalHolder.golsayaci = 0;
+        GoalHolderBlue.mavitakimgol = 0;
+        GoalHolderKirmizi.kýrmýzýtakýmgol = 0;
 
     }
     void Start()
@@ -24,6 +25,6 @@ public class ScoreHolder : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        scoretext.text ="Atýlan Gol:" + GoalHolder.golsayaci;
+        scoretext.text = "Mavi Takým:" + GoalHolderKirmizi.kýrmýzýtakýmgol + " " +"Kýrmýzý Takým:" + GoalHolderBlue.mavitakimgol;
     }
 }
