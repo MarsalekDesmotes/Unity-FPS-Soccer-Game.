@@ -20,4 +20,12 @@ public class SahneMotoru : MonoBehaviour
 
        
     }
+    public void goMenu()
+    {
+
+
+        SceneManager.LoadScene("Main_Menu");
+
+
+    }
 }
